@@ -14,9 +14,9 @@ How to Use
 Founded Errors
 ------------
 * Error with multi-threading
-  * When downloading, the progress bar doesn't move
-  * sub process - communicate blocks other threadings from running
+  * When downloading, the progress bar doesn't work
+  * sub process - communicate blocks other threadings from running. So the progress bar cannot be ran at the same time.
 * Byte Error
-  * stdout cannot be shown in the output textbox due to the byte error
+  * stdout cannot be shown in the download progress textbox due to the byte error
 
 *How to Download Ffmpeg : ffmpeg(https://www.wikihow.com/Install-FFmpeg-on-Windows)
