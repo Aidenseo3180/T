@@ -11,11 +11,12 @@ How to Use
 3. Run the exe, paste the image link and browse the ffmpeg from the computer
 4. Press Confirm and Download
 
-###Founded Errors
+Founded Errors
+------------
 * Error with multi-threading
   * When downloading, the progress bar doesn't move
   * sub process - communicate blocks other threadings from running
 * Byte Error
   * stdout cannot be shown in the output textbox due to the byte error
 
-[How to Download Ffmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows)
+*How to Download Ffmpeg : ffmpeg(https://www.wikihow.com/Install-FFmpeg-on-Windows)
