@@ -19,4 +19,6 @@ Founded Errors
 * Byte Error
   * stdout cannot be shown in the download progress textbox due to the byte error
 
+<hr/>
+### Links
 * How to Download Ffmpeg : [ffmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows)
