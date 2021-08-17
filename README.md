@@ -13,6 +13,8 @@ How to Use
 3. Run the exe, paste the image link and browse the ffmpeg from the computer
 4. Press Confirm and Download
 
+*I didn't add option to change the name of the video, so please double check if the chosen directory doesn't contain "1111.mp4" (this is the default name of the video)*
+
 Founded Errors
 ------------
 * Error with multi-threading
