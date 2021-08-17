@@ -2,9 +2,9 @@
 About 
 -------
 This is a PyQt5 program that allows the user to download both public and sub-only videos.
-In order to use, please read the direction carefully.
+In order to use, please read the directions carefully.
 
-*Currently under maintenance, but still can be used without having difficulties*
+*Currently under maintenance and developments, but still can be used without having difficulties*
 **This is made for a practice purpose. I will not take responsibility of the consequences from misusing my codes**
 
 How to Use
@@ -14,7 +14,7 @@ How to Use
 3. Run the exe, paste the image link and browse the ffmpeg from the computer
 4. Press Confirm and Download
 
-*I didn't add option to change the name of the video, so please double check if the chosen directory doesn't contain "1111.mp4" (this is the default name of the video)*
+*I didn't add option to change the name of the video, so please double check if the chosen directory doesn't contain "1111.mp4" (this is the default name of the video), and make sure to change the name of the video file once you download.*
 
 Founded Errors
 ------------
