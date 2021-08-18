@@ -25,7 +25,7 @@ Founded Errors
   * stdout cannot be shown in the download progress textbox due to the byte error
 * Done Error
   * The "Done" window pops up if the video fails to load
-  * Happens due to the user's fault, so double check the input
+  * Happens due to the user's fault, so double check the input 
 
 IF
 -----
