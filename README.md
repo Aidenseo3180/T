@@ -1,7 +1,7 @@
 # twitch-vid-downloader
 About 
 -------
-This is a PyQt5 program that allows the user to download both public and sub-only videos.
+This is a PyQt5 program that allows the user to download videos
 In order to use, please read the directions carefully.
 
 *Currently under maintenance and developments, but still can be used without having difficulties*  
