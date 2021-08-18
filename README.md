@@ -1,4 +1,4 @@
-# twitch-vid-downloader
+# vid-downloader
 About 
 -------
 This is a PyQt5 program that allows the user to download videos 
