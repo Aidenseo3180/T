@@ -26,7 +26,7 @@ Founded Errors
 
 IF
 -----
-* If it's not working, copy&paste the converted link and modify it. Then, paste that link to the cmd that is being connected to ffmpeg.exe directory
+* If it's not working, copy&paste the converted link and modify it. Then, paste that link to the cmd that is connected to ffmpeg.exe directory
 
 
 Links
