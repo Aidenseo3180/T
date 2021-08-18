@@ -4,7 +4,7 @@ About
 This is a PyQt5 program that allows the user to download both public and sub-only videos.
 In order to use, please read the directions carefully.
 
-*Currently under maintenance and developments, but still can be used without having difficulties*
+*Currently under maintenance and developments, but still can be used without having difficulties*  
 **This is made for a practice purpose. I will not take responsibility of the consequences from misusing my codes**
 
 How to Use
