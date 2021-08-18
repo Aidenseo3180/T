@@ -155,7 +155,7 @@ class secondWindow(QMainWindow, menu.menuBar, backToFirst):        #second page
         try:
             imageURL = self.text_edit_1.toPlainText()
             x = imageURL.split('/')
-            self.text_edit_2.setText(f'.\\ffmpeg -headers "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36" -i "https://d1m7jfoe9zdc1j.cloudfront.net/{x[3]}/chunked/index-dvr.m3u8" -c copy -bsf:a aac_adtstoasc "1111.mp4"' )    
+            self.text_edit_2.setText(f'.\\ffmpeg -headers "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36" -i "https://d2nvs31859zcd8.cloudfront.net/{x[3]}/chunked/index-dvr.m3u8" -c copy -bsf:a aac_adtstoasc "1111.mp4"' )    
             self.linkChecker('OK')
         except IndexError:
             self.linkChecker('NOT OKAY')
@@ -302,4 +302,3 @@ if __name__ =='__main__':
     firstPage = FirstWindow()    #first page
     sys.exit(app.exec_())
 
-#https://d1m7jfoe9zdc1j.cloudfront.net/df3b0b4513b85c52aaa1_nanajam777_43255576877_1628875307/storyboards/1117187962-strip-0.jpg
