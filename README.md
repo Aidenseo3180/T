@@ -24,6 +24,11 @@ Founded Errors
 * Byte Error
   * stdout cannot be shown in the download progress textbox due to the byte error
 
+IF
+-----
+* If it's not working, copy&paste the converted link and modify it. Then, paste that link to the cmd that is being connected to ffmpeg.exe directory
+
+
 Links
 ---
 * How to Download Ffmpeg : [ffmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows)
