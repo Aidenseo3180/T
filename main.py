@@ -1,6 +1,6 @@
 import sys
-from PyQt5 import QtWidgets, QtGui, QtCore
-from PyQt5.QtWidgets import QApplication, QGridLayout, QProgressBar,QLabel, QLineEdit, QListWidgetItem, QMainWindow,QAction, QPushButton, QWidget,QMessageBox,QTextEdit,QTabWidget,QVBoxLayout,QFileDialog,QLayout
+from PyQt5 import QtGui, QtCore
+from PyQt5.QtWidgets import QApplication, QProgressBar,QLabel, QLineEdit, QMainWindow, QPushButton, QWidget,QMessageBox,QTextEdit,QFileDialog
 import menu
 import os, subprocess
 from time import sleep
@@ -9,7 +9,7 @@ from downloadFile import check_dir
 
 class backToFirst:     #when close the window, shows the first page
     def closeEvent(self, QCloseEvent):
-        os.chdir(r'C:\Users\minwo\Documents\Code\twitch_ffpng_downloader')
+        os.chdir(owd)
         self.firstWin = FirstWindow()
         self.firstWin.show()
 
@@ -155,7 +155,8 @@ class secondWindow(QMainWindow, menu.menuBar, backToFirst):        #second page
         try:
             imageURL = self.text_edit_1.toPlainText()
             x = imageURL.split('/')
-            self.text_edit_2.setText(f'.\\ffmpeg -headers "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36" -i "https://d2nvs31859zcd8.cloudfront.net/{x[3]}/chunked/index-dvr.m3u8" -c copy -bsf:a aac_adtstoasc "1111.mp4"' )    
+            self.text_edit_2.setText(f'.\\ffmpeg -headers "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36" -i "https://d1m7jfoe9zdc1j.cloudfront.net/{x[3]}/chunked/index-dvr.m3u8" -c copy -bsf:a aac_adtstoasc "1111.mp4"' )    
+            # NOTE 이거 나중에 바꿀거임. 계속 링크가 바뀌니까 2번째 (d1jms...하는거 나중에 링크에서 직접 가져오게)
             self.linkChecker('OK')
         except IndexError:
             self.linkChecker('NOT OKAY')
@@ -299,6 +300,8 @@ class download(QMainWindow, menu.menuBar, backToFirst):
 #main code
 if __name__ =='__main__':
     app = QApplication(sys.argv)
+    owd = os.getcwd()   #get current directory - so that we can come back to our original directory as soon as we finish downloading
     firstPage = FirstWindow()    #first page
     sys.exit(app.exec_())
 
+#https://d1m7jfoe9zdc1j.cloudfront.net/df3b0b4513b85c52aaa1_nanajam777_43255576877_1628875307/storyboards/1117187962-strip-0.jpg
