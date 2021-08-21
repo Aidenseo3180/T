@@ -5,7 +5,7 @@ This is a PyQt5 program that allows the user to download twitch videos
 In order to use, please read the directions carefully.
 
 *Currently under maintenance and developments, but still can be used without having difficulties*  
-**This is made for a practice purpose. I will not take responsibility of the consequences from misusing my codes**
+**This is made for a practice purpose. I will not take any responsibilities of misusing my codes**
 
 How to Use
 -------------
