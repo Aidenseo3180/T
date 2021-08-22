@@ -71,17 +71,12 @@ class FirstWindow(QMainWindow, menu.menuBar):
         #screen
         self.show()
 
-    def closeEvent(self, QCloseEvent):   #X 누를떄 나오는 이벤트를 QCloseEvent라고 함(closeEvent를 오버라이드 함)
+    def closeEvent(self, QCloseEvent):
         ans = QMessageBox.question(self,"Twitch Sub-Only Video Downloader", "Quit the program?", 
-        QMessageBox.Yes | QMessageBox.No, QMessageBox.No)  #문제 형식으로 메세지 박스를 띄움
-        #(자기 자신, 창 이름, 창 내용, 버튼들을 쭉 나열, 기본값 (기본적으로 YES,NO로 지정되있는거처럼))
-        #기본값은 처음 창이 뜰 때 버튼이 음영처리 되어있는거!
-        #근데 Yes,No버튼을 설정 안해놔서 해줘야함. 그래서 버튼의 Yes,No값을 변수로 받을 수 있음
-        if ans ==QMessageBox.Yes :  #QMessageBox.Yes는 상수라서 이렇게 비교 가능
-            QCloseEvent.accept()    #이벤트를 accept함
+        QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            QCloseEvent.accept() 
         else:
-            QCloseEvent.ignore()    #아니면 이벤트를 무시 (창이 안꺼짐!)
-            #근데 이 QCloseEvent하고 .quit하곤 다른 이벤트임!
+            QCloseEvent.ignore()
 
     def secondPage(self):
         self.hide()
@@ -130,7 +125,7 @@ class secondWindow(QMainWindow, menu.menuBar, backToFirst):
     def __init__(self):
         super(secondWindow, self).__init__()
         self.secondUI()
-        self.lastWin = download()   #download 페이지에 link, browsed file를 전달하기 위해 만듦
+        self.lastWin = download()
         
     def secondUI(self):
         #label
@@ -187,7 +182,7 @@ class secondWindow(QMainWindow, menu.menuBar, backToFirst):
         statusLabel.resize(90,50)
         statusLabel.move(800,200)
 
-        self.checkText = QTextEdit("",self) #링크 : 노란색 status
+        self.checkText = QTextEdit("",self)
         self.checkText.setStyleSheet("background-color: rgb(255, 255, 51);")
         self.checkText.setAlignment(Qt.AlignCenter)
         self.checkText.resize(100,50)
@@ -197,7 +192,7 @@ class secondWindow(QMainWindow, menu.menuBar, backToFirst):
         self.expLabel.resize(700,50)
         self.expLabel.move(30,350)
         
-        self.browseSt = QTextEdit(self) # 파일 노란색 status
+        self.browseSt = QTextEdit(self)
         self.browseSt.setStyleSheet("background-color: rgb(255, 255, 51);")
         self.browseSt.setFont(QFont("Arial", 8))   #font
         self.browseSt.setAlignment(Qt.AlignCenter)
@@ -211,7 +206,7 @@ class secondWindow(QMainWindow, menu.menuBar, backToFirst):
         browserCh.clicked.connect(self.checkFile)
 
 
-    def onChanged(self):          #when the text in box changes, it also changes what's inside the label (텍스트가 바뀌는걸 보여주는것)
+    def onChanged(self):          #when the text in box changes, it also changes what's inside the label
         try:
             imageURL = self.text_edit_1.toPlainText()
             x = imageURL.split('/')
@@ -245,21 +240,21 @@ class secondWindow(QMainWindow, menu.menuBar, backToFirst):
 
     def downloadPage(self):
         if (self.checkText.toPlainText() == 'OK' and self.browseSt.toPlainText() == 'OK'):
-            self.lastWin.input1.setText(self.text_edit_2.toPlainText()) #링크 정보를 옮김
-            self.lastWin.input2.setText(self.dir_storage.toPlainText()) #browse한 파일 위치를 옮김
+            self.lastWin.input1.setText(self.text_edit_2.toPlainText())
+            self.lastWin.input2.setText(self.dir_storage.toPlainText())
             self.lastWin.displayInfo()
             self.hide()
 
-        elif (self.checkText.toPlainText() != 'OK' and self.browseSt.toPlainText() == 'OK'):  #만약 status가 OK가 아니면 :
+        elif (self.checkText.toPlainText() != 'OK' and self.browseSt.toPlainText() == 'OK'):
             QMessageBox.about(self, "Warning", "The Format of ffmpeg link is incorrect. Check 'How to Use' for more information")
 
-        elif (self.browseSt.toPlainText() != 'O' and self.checkText.toPlainText() == 'OK'):   #<= 여기엔 browse한 곳에 ffmpeg가 없을때
+        elif (self.browseSt.toPlainText() != 'O' and self.checkText.toPlainText() == 'OK'):
             QMessageBox.about(self, "Warning", "The file location doesn't contain ffmpeg.exe, ffplay.exe and ffprobe.exe. Please reselect the directory")
 
-        else:   #둘 다 아니면
+        else: 
             QMessageBox.about(self, "Warning", "Both the file directory and the format of ffmpeg link are incorrect. Check 'How to Use' for more information")
 
-    def linkChecker(self, text):    #check if the link is legit (status를 색깔로 표시)
+    def linkChecker(self, text):    #check if the link is legit
         if (text=="OK"):
             self.checkText.setText("OK")
             self.checkText.setAlignment(Qt.AlignCenter)
@@ -277,8 +272,8 @@ class download(QMainWindow, menu.menuBar, backToFirst):
     def __init__(self):
         super().__init__()
         self.downloadPage()
-        self.input1 = QLineEdit()  #link를 받음
-        self.input2 = QLineEdit()  #directory 정보를 받음
+        self.input1 = QLineEdit()  #link
+        self.input2 = QLineEdit()  #directory
         #self.hide()
 
     def downloadPage(self):
@@ -309,38 +304,18 @@ class download(QMainWindow, menu.menuBar, backToFirst):
     def displayInfo(self):
         self.show()
 
-    ''' NOTE : Cancel Progress Function
-    def cancelProgress(self):   #cancel 버튼 누르면 진짜로 그만할거냐고 물어봄
-        cac = QMessageBox.question(self,"Twitch Sub-Only Video Downloader", "If you leave now, the current download progress will be discarded. Are you sure?", 
-        QMessageBox.Yes | QMessageBox.No, QMessageBox.No)  #문제 형식으로 메세지 박스를 띄움
-        #(자기 자신, 창 이름, 창 내용, 버튼들을 쭉 나열, 기본값 (기본적으로 YES,NO로 지정되있는거처럼))
-        #기본값은 처음 창이 뜰 때 버튼이 음영처리 되어있는거!
-        #근데 Yes,No버튼을 설정 안해놔서 해줘야함. 그래서 버튼의 Yes,No값을 변수로 받을 수 있음
-        if cac == QMessageBox.Yes :  #QMessageBox.Yes는 상수라서 이렇게 비교 가능
-            #self.download_dir()
-
-            #self.download_dir(self,None,None)  NOTE 이건 아직 모르겠음... 어떻게 이걸 해야할지 (nested function으로 가능하게 할 수 있을듯?)
-
-            self.progressBar.setMaximum(100)    #만약 취소되었을땐 progressBar을 아예 멈춤
-            self.progressBar.setValue(0)
-            QMessageBox.about(self,"Cancelled", "Download Cancelled. You'll be headed back to the main menu")
-            self.close()
-        else:
-            return
-    '''
-
-    def downloadProgress(self):  #Download 버튼을 눌렀을때 실행
-        self.pauButton.clicked.disconnect() #원래 connection을 끊음
-        self.pauButton.setEnabled(False)    #버튼 다시 못누르게 함
+    def downloadProgress(self): 
+        self.pauButton.clicked.disconnect()
+        self.pauButton.setEnabled(False)
         self.pauButton.setText("Downloading...")
 
-        self.progressBar.setTextVisible(False)  #무한로딩을 보여줌
+        self.progressBar.setTextVisible(False)
 
         self.progressBar.setMinimum(0)
         self.progressBar.setMaximum(0)
 
         #얻어온 정보들
-        text_inf = self.input1.text()       #정보를 얻어서, 이걸 download_dir에 넣어 사용함
+        text_inf = self.input1.text()
         file_inf = self.input2.text()       #file
         self.download_dir(text_inf, file_inf)
 
@@ -349,25 +324,19 @@ class download(QMainWindow, menu.menuBar, backToFirst):
         if linkVal is not None and browseVal is not None:
             link = linkVal
             indexx = link.find('\\')
-            final_link = link[:indexx]+'\\'+link[indexx:]   #NOTE : 파일의 네임은 아직 지정 못함.. (나중에 기능을 더해야 함)
+            final_link = link[:indexx]+'\\'+link[indexx:]
 
             x = subprocess.Popen(final_link, cwd = browseVal, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             stdout, stderr = x.communicate()
-            exit_code = x.wait()    #저장 될 떄까지 기다림
+            exit_code = x.wait()    #wait until it saves
 
-            #NOTE stdout을 하나씩 읽으면 output 윈도우에 보이게 할 수도 있음!
-
-            if x.poll() is not None:  #subprocess가 끝나면
-                self.progressBar.setMaximum(100)    #만약 다 되었을땐 progressBar을 아예 멈춤
+            if x.poll() is not None:
+                self.progressBar.setMaximum(100)
                 self.progressBar.setValue(0)
                 self.pauButton.setText("Done")
                 QMessageBox.about(self, "Alert", "Successfully Downloaded. Press 'Done' to go back to the main menu")
-                self.pauButton.setEnabled(True)     #다시 누를 수 있게 함
-
+                self.pauButton.setEnabled(True)
                 self.pauButton.clicked.connect(self.close)
-
-
-
 
 #main code
 if __name__ =='__main__':
@@ -376,4 +345,3 @@ if __name__ =='__main__':
     owd = os.getcwd()
     firstPage = FirstWindow()    #first page
     sys.exit(app.exec_())
-
