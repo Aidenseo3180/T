@@ -22,7 +22,7 @@ Founded Errors
 * Byte Error
   * stdout cannot be shown in the download progress textbox due to the byte error
 * Theme Error
-  * QLabel in the beginning doesn't change it's color for some reason
+  * Color issue with QLabel (title of program) in the beginning
 
 IF
 -----
