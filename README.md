@@ -36,7 +36,7 @@ IF
 
 Plans
 ----
-- [X] Avoid overlapping of video name
+- [X] No Video Name Error (No Overlapping)
 - [ ] Fix Thread Bug
 - [ ] Show Download Progress (output of what's going on inside)
 - [X] Add Dark Theme
