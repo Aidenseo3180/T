@@ -10,11 +10,9 @@ In order to use, please read the directions carefully.
 How to Use
 -------------
 1. Download ffmpeg from the store, and save to the directory
-2. Go to Twitch, find the video that you want to download, press left-click and **copy image link**
+2. Go to Twitch, find the video that you want to download, right-click on top of the video, and **copy image link**
 3. Run the exe, paste the image link and browse the ffmpeg from the computer
 4. Press Confirm and Download
-
-*I didn't add option to change the name of the video, so please double check if the chosen directory doesn't contain "1111.mp4" (this is the default name of the video), and make sure to change the name of the video file once you have downloaded.*
 
 Founded Errors
 ------------
@@ -31,6 +29,12 @@ IF
 -----
 * If it's not working, copy&paste the converted link and modify it. Then, paste that link to the cmd that is connected to ffmpeg.exe directory
 
+Plans
+----
+[X]Set Name of the Video
+[]Fix Thread Bug
+[]Show Download Progress
+[]Add Dark Theme
 
 Links
 ---
