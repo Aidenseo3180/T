@@ -5,6 +5,9 @@ This is a PyQt5 program that allows the user to download twitch videos.
 In order to use, please read the directions carefully.
 
 *Currently under maintenance and developments, but still can be used without having difficulties*  
+If the video contains copyright issues (the muted part, shown as red bar), the downloader ignores that part, and continues to download.  
+* Therefore, the user won't get to see those parts
+
 **This is made for a practice purpose. I will not take any responsibilities of misusing my codes**
 
 How to Use
