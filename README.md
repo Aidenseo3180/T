@@ -3,6 +3,7 @@ About
 -------
 This is a PyQt5 program that allows the user to download both sub-only and public twitch videos.  
 The video will be downloaded in 1080p quality.
+Tested from Windows OS, haven't tested with Linux OS
 
 In order to use, please read **How to Use**.
 
