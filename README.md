@@ -34,7 +34,7 @@ IF
 -----
 * If it's not working, copy&paste the converted link and modify it. Then, paste that link to the cmd that is connected to ffmpeg.exe directory.
 
-Plans
+Todos
 ----
 - [X] No Video Name Error (No Overlapping)
 - [ ] Fix Thread Bug
