@@ -21,9 +21,8 @@ Founded Errors
   * sub process - communicate blocks other threadings from running. So the progress bar cannot be ran at the same time.
 * Byte Error
   * stdout cannot be shown in the download progress textbox due to the byte error
-* Done Error
-  * The "Done" window pops up if the video fails to load
-  * Happens due to the user's fault, so double check the input 
+* Theme Error
+  * QLabel in the beginning doesn't change it's color for some reason
 
 IF
 -----
@@ -34,7 +33,7 @@ Plans
 - [X] Avoid overlapping of video name
 - [ ] Fix Thread Bug
 - [ ] Show Download Progress
-- [ ] Add Dark Theme
+- [X] Add Dark Theme
 
 Links
 ---
