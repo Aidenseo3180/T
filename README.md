@@ -2,37 +2,37 @@
 About 
 -------
 This is a PyQt5 program that allows the user to download both sub-only and public twitch videos.  
-The video will be downloaded in 1080p quality
+The video will be downloaded in 1080p quality.
 
-In order to use, please read **How to Use**
+In order to use, please read **How to Use**.
 
-*Currently under maintenance and developments, but still can be used without having difficulties*  
+*Currently under maintenance and developments, but still can be used without having difficulties.*  
 
 *If the video contains copyright issues (the muted part, shown as red bar), the downloader ignores that part, and continues to download.*    
-*Therefore, the user won't get to see those parts*
+*Therefore, the user won't get to see those parts.*
 
-**This is made for a practice purpose. I will not take any responsibilities of misusing my codes**
+**This is made for a practice purpose. I will not take any responsibilities of misusing my codes.**
 
 How to Use
 -------------
-1. Download ffmpeg from the store, and save to the directory
-2. Go to Twitch, find the video that you want to download, right-click on top of the video, and **copy image link**
-3. Run the exe, paste the image link and browse the ffmpeg from the computer
-4. Press Confirm and Download
+1. Download ffmpeg from the store, and save to the directory.
+2. Go to Twitch, find the video that you want to download, right-click on top of the video, and **copy image link**.
+3. Run the exe, paste the image link and browse the ffmpeg from the computer.
+4. Press Confirm and Download.
 
 Founded Errors
 ------------
 * Error with multi-threading
-  * When downloading, the progress bar doesn't work
+  * When downloading, the progress bar doesn't work.
   * sub process - communicate blocks other threadings from running. So the progress bar cannot be ran at the same time.
 * Byte Error
-  * stdout cannot be shown in the download progress textbox due to the byte error
+  * stdout cannot be shown in the download progress textbox due to the byte error.
 * Theme Error
-  * Color issue with QLabel (title of program) in the beginning
+  * Color issue with QLabel (title of program) in the beginning.
 
 IF
 -----
-* If it's not working, copy&paste the converted link and modify it. Then, paste that link to the cmd that is connected to ffmpeg.exe directory
+* If it's not working, copy&paste the converted link and modify it. Then, paste that link to the cmd that is connected to ffmpeg.exe directory.
 
 Plans
 ----
