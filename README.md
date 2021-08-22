@@ -31,10 +31,10 @@ IF
 
 Plans
 ----
-[X]Set Name of the Video
-[]Fix Thread Bug
-[]Show Download Progress
-[]Add Dark Theme
+- [X] Set Name of the Video
+- [ ] Fix Thread Bug
+- [ ] Show Download Progress
+- [ ] Add Dark Theme
 
 Links
 ---
