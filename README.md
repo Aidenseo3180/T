@@ -36,7 +36,7 @@ Plans
 ----
 - [X] Avoid overlapping of video name
 - [ ] Fix Thread Bug
-- [ ] Show Download Progress (output of cmd)
+- [ ] Show Download Progress (output of what's going on inside)
 - [X] Add Dark Theme
 
 Links
