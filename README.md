@@ -12,7 +12,7 @@ In order to use, please read **How to Use**.
 *If the video contains copyright issues (the muted part, shown as red bar), the downloader ignores that part, and continues to download.*    
 *Therefore, the user won't get to see those parts.*
 
-**Last Checked : 08/25/2021 **
+**Last Checked : 08/25/2021**
 
 How to Use
 -------------
