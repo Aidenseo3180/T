@@ -41,7 +41,7 @@ Todos
 - [ ] Fix Thread Bug
 - [ ] Show Download Progress (output of what's going on inside)
 - [X] Add Dark Theme
-- [ ] Add browsing function in another tab
+- [ ] Add browsing feature in another tab
 
 Links
 ---
