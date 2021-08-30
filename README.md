@@ -9,8 +9,7 @@ In order to use, please read **How to Use**.
 
 *Currently under maintenance and developments, but still can be used without having difficulties.*  
 
-*If the video contains copyright issues (the muted part, shown as red bar), the downloader ignores that part, and continues to download.*    
-*Therefore, the user won't get to see those parts.*
+*If the video contains copyright issues (the muted part, shown as red bar), the downloader ignores that part, and continues to download. Therefore, the user won't get to see those parts.*
 
 **Last Checked : 08/25/2021**
 
@@ -41,7 +40,6 @@ Todos
 - [ ] Fix Thread Bug
 - [ ] Show Download Progress (output of what's going on inside)
 - [X] Add Dark Theme
-- [ ] Add browsing feature in another tab
 
 Links
 ---
