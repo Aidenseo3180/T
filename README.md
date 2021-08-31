@@ -29,8 +29,8 @@ Founded Errors
   * stdout cannot be shown in the download progress textbox due to the byte error.
 * Theme Error
   * Color issue with QLabel (title of program) in the beginning.
-* Download ends in 1 sec
- * when the given link is unavailable the download ends within a second (and says Done, instead of 'try again later')
+* Download ends in 1 sec  
+  * when the given link is unavailable the download ends within a second (and says Done, instead of 'try again later')
 
 IF
 -----
