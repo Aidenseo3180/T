@@ -1,6 +1,9 @@
 # twitch-vid-downloader
 About 
 -------
+![Capture](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/399f5523-3dee-4ca5-a061-b8f1b0baf1f6)
+![Image](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/cadd10d9-182a-442e-ac67-051dee2b07c8)
+
 This is a PyQt5 program that allows the user to download twitch videos.  
 The video will be downloaded in 1080p quality.
 Tested from Windows OS, haven't tested with Linux OS
