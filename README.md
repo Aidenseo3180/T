@@ -1,18 +1,16 @@
 # twitch-vid-downloader
 About 
 -------
-![Capture](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/399f5523-3dee-4ca5-a061-b8f1b0baf1f6)
-![Image](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/cadd10d9-182a-442e-ac67-051dee2b07c8)
+![Capture](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/399f5523-3dee-4ca5-a061-b8f1b0baf1f6)![Image](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/cadd10d9-182a-442e-ac67-051dee2b07c8)
 
-This is a PyQt5 program that allows the user to download twitch videos.  
-The video will be downloaded in 1080p quality.
-Tested from Windows OS, haven't tested with Linux OS
+A PyQt5 program that allows the user to download twitch videos for a purpose of testing the viability of ffmpeg.
+The video is downloaded in 1080p quality, tested in Windows 10 OS
 
 In order to use, please read **How to Use**.
 
-*Currently under maintenance and developments, but still can be used without having difficulties.*  
+*No longer in the development, but still can be used without having difficulties as of 2021.*  
 
-*If the video contains copyright issues (the muted part, shown as red bar), the downloader ignores that part, and continues to download. Therefore, the user won't get to see those parts.*
+*If the video contains copyright issues (the muted part, shown as red bar in twitch), the downloader skips that section and continues to download.*
 
 **Last Checked : 08/31/2021**
 
