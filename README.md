@@ -1,7 +1,9 @@
 # twitch-vid-downloader
 About 
 -------
-![Capture](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/399f5523-3dee-4ca5-a061-b8f1b0baf1f6)![Image](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/cadd10d9-182a-442e-ac67-051dee2b07c8)
+| Start Page                          | Insert Page                         |
+| ----------------------------------- | ----------------------------------- |
+| ![Capture](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/399f5523-3dee-4ca5-a061-b8f1b0baf1f6) | ![Image](https://github.com/Aidenseo3180/blog-web-application/assets/66958352/cadd10d9-182a-442e-ac67-051dee2b07c8) |
 
 A PyQt5 program that allows the user to download twitch videos for a purpose of testing the viability of ffmpeg.
 The video is downloaded in 1080p quality, tested in Windows 10 OS
